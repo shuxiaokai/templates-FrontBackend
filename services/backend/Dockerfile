@@ -11,6 +11,7 @@ ENV PYTHONPATH=.
 #RUN pip install --upgrade pip
 #RUN pip install -r requirements.txt
 
+RUN pip install pipenv
 COPY Pipfile .
 COPY Pipfile.lock .
 #RUN pipenv install --deploy
