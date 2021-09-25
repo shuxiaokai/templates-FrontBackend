@@ -27,7 +27,7 @@ build:
 # connecting test
 .PHONY: test
 test:
-	@echo -e ">>> to backend"
+	@echo "\n>>> to backend"
 	curl $(LOCAL_ADDRESS):5000
-	@echo -e ">>> to frontend"
+	@echo "\n\n\n>>> to frontend"
 	curl $(LOCAL_ADDRESS):8080
